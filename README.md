@@ -11,3 +11,4 @@ Minecraft 1.21.1：死亡时按格子随机掉落背包物品。轻量级模组�
 本模组应该只支持1.21.1
 
 该模组默认死亡时保留装备栏和快捷栏的物品，如果你想不保留它们，可以在配置文件中修改
+配置文件在 \config\randomdeathdrop\randomdeathdrop.json

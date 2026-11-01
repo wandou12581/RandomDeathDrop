@@ -1,0 +1,44 @@
+plugins {
+    id 'net.neoforged.moddev' version '2.0.144'
+}
+
+group = 'com.halfdrop'
+version = '1.3.1'
+
+base {
+    archivesName = 'RandomDeathDrop-neoforge'
+}
+
+// 共享源码：common/ 下的类由本模块直接编译进 jar
+sourceSets.main.java.srcDirs += ['../common/src/main/java']
+
+neoForge {
+    version = '21.1.249'
+
+    runs {
+        client {
+            client()
+        }
+        server {
+            server()
+        }
+    }
+
+    mods {
+        halfdrop {
+            sourceSet sourceSets.main
+        }
+    }
+}
+
+processResources {
+    filesMatching('META-INF/neoforge.mods.toml') {
+        expand project.properties
+    }
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}

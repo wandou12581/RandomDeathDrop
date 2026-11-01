@@ -1,0 +1,13 @@
+{
+  "global": {
+    "dropPercent": 50,
+    "roundUp": true,
+    "keepHotbar": true,
+    "keepSelectedSlot": true,
+    "keepArmorSlot": true,
+    "keepWeaponOffhand": true,
+    "keepXP": false,
+    "whiteList": []
+  },
+  "players": []
+}

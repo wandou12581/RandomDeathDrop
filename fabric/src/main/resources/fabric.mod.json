@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "halfdrop",
+  "version": "${version}",
+  "name": "死亡随机掉落（RandomDeathDrop）",
+  "icon": "assets/halfdrop/icon.png",
+  "description": "死亡时只掉落背包里随机 50%（向上取整）的格子：盔甲栏、副手与快捷栏可配置保留，堆叠物品整格掉落。支持全局/按玩家配置、白名单、经验保留与 /randomdeathdrop reload（或 /rdd reload）热重载。纯服务端模组，客户端无需安装。",
+  "authors": ["RandomDeathDrop"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.halfdrop.HalfDropFabric"]
+  },
+  "mixins": ["halfdrop.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

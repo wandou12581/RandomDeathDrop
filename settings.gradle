@@ -1,0 +1,18 @@
+pluginManagement {
+    repositories {
+        maven { url 'https://maven.fabricmc.net/' }
+        maven {
+            url 'https://maven.neoforged.net/releases'
+            // 只让 NeoForge 相关 group 走这个仓库，避免 loom 的 gson/kotlin 等也去探测它
+            content { includeGroupByRegex 'net\\.neoforged.*' }
+        }
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+// 本机已安装 JDK 21（toolchain 直接复用），不引入 foojay 自动下载插件。
+rootProject.name = 'halfdrop'
+
+include ':fabric'
+include ':neoforge'

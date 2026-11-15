@@ -1,0 +1,11 @@
+.gradle/
+build/
+*/build/
+fabric/build/
+neoforge/build/
+run/
+*/run/
+*.log
+.idea/
+*.iml
+.gradle

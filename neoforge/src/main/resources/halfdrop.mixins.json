@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.halfdrop.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "PlayerDeathDropMixin",
+    "ServerPlayerRespawnMixin",
+    "KeepXpMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

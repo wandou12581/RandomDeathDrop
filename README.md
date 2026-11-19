@@ -57,7 +57,7 @@ globalWhiteList: ["*_wood","!oak_wood"]
 // 某个玩家继承全局白名单并额外保护木炭
 {
   "name": "Steve", 
-  "whiteList": ["globalWhiteList", "charcoal"] 
+  "whiteList": ["globalWhiteList", "charcoal"] ,
   "blackList": []
 }
 ```

@@ -2,7 +2,7 @@
 
 Minecraft 1.21.1：死亡时按格子随机掉落背包物品。轻量级模组，搞着玩的 :D
 
-![演示效果](./images/Effect.gif)
+![演示效果](https://github.com/wandou12581/RandomDeathDrop/blob/v1.4/images/Effect.gif)
 
 > 纯服务端模组：服务器装即可，客户端无需安装。
 
